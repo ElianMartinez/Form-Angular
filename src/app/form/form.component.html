@@ -9,7 +9,7 @@
                <!-- Nested view  -->
             <div class="personal" [ngClass]="actPersonal ? 'active' : 'disabled22' ">
 
-               <form #personalForm="ngForm" class="editForm" novalidate>
+              <form #personalForm="ngForm" class="editForm" novalidate>
                   <div class="tab-pane fade in active">
                       <h4 class="head text-center">{{title}}</h4>
                       <br/>
@@ -38,38 +38,43 @@
                               </div>
                                   
                               <div class="form-group text-center">
-                                  <button class="btn btn-success btn-outline-rounded btn-info" [disabled]="!personalForm.valid" (click)="goToNext(personalForm)"> Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+                                  <button class="btn btn-success btn-outline-rounded btn-info" [disabled]="!personalForm.valid" (click)="(activarStep(2,personalForm))"> Next <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
                               </div>
                           </div>
                       </div>
                   </div>
-              </form>
-           
-            
+              </form> 
+             
             </div>
+           
 
-            <div class="Family" [ngClass]="actFamiliar ? 'active' : 'disabled22' ">
+            <div [ngClass]="actFamiliar ? 'active' : 'disabled22' ">
                     <p>Familiar </p>
-                    <button (click)="" >next</button>
+
+                    <button (click)="activarStep(3);" >next</button>
             </div>
 
 
             <div class="Educacion" [ngClass]="actEducacion ? 'active' : 'disabled22' ">
                     <p>Educacion </p>
+                    <button (click)="activarStep(4)" >next</button>
             </div>
 
 
 
             <div class="ConTec" [ngClass]="actConTec ? 'active' : 'disabled22' ">
                     <p>Con Tec</p>
+                    <button (click)="activarStep(5)" >next</button>
             </div>
 
             <div class="Idioma" [ngClass]="actIdioma ? 'active' : 'disabled22' ">
                     <p>Idiomas</p>
+                    <button (click)="activarStep(6)" >next</button>
             </div>
 
             <div class="ExpLaboral" [ngClass]="actExpLaboral ? 'active' : 'disabled22' ">
                     <p>Experiencia Laboral</p>
+                    <button (click)="activarStep(7)" >next</button>
             </div>
 
 
