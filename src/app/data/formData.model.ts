@@ -1,6 +1,33 @@
 export class FormData {
-    firstName: string = '';
-    lastName : string = '';
+    //Personal
+    nombre: string = '';
+    apellido : string = '';
+    nacionalidad: string = '';
+    estado_civil: string = '';
+    tipo_documento: string = '';
+    documento_identidad : number = null;
+    lugar_nacimineto: string = '';
+    fecha_nacimiento : string = '';
+    calle: string = '';
+    edificio: string = '';
+    sector: string = '';
+    ciudad: string = '';
+    telefono_residencia: number = null;
+    telefono_trabajo: number = null;
+    celular:number = null;
+    correo:string = '';
+
+    //Datos Familiares
+     familia= [
+        {nombre: '', parentesco: '', fechaN: '', ocupacion: '', telefono: ''}
+     ];
+     
+    
+
+    
+
+
+
     email: string = '';
     work: string = '';
     street: string = '';
@@ -9,8 +36,7 @@ export class FormData {
     zip: string = '';
 
     clear() {
-        this.firstName = '';
-        this.lastName = '';
+        
         this.email = '';
         this.work = '';
         this.street = '';
@@ -21,9 +47,22 @@ export class FormData {
 }
 
 export class Personal {
-    firstName: string = '';
-    lastName : string = '';
-    email: string = '';
+    nombre: string = '';
+    apellido : string = '';
+    nacionalidad: string = '';
+    estado_civil: string = '';
+    tipo_documento: string = '';
+    documento_identidad : number = null;
+    lugar_nacimineto: string = '';
+    fecha_nacimiento : string = '';
+    calle: string = '';
+    edificio: string = '';
+    sector: string = '';
+    ciudad: string = '';
+    telefono_residencia: number = null;
+    telefono_trabajo: number = null;
+    celular:number = null;
+    correo:string = '';
 }
 
 export class Address {

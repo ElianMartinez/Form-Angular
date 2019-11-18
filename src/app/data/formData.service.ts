@@ -12,10 +12,23 @@ export class FormDataService {
 
     getPersonal(): Personal {
         // Return the Personal data
-        var personal: Personal = {
-            firstName: this.formData.firstName,
-            lastName: this.formData.lastName,
-            email: this.formData.email
+ var personal: Personal = {
+    nombre: this.formData.nombre,
+    apellido : this.formData.apellido,
+    nacionalidad : this.formData.nacionalidad,
+    estado_civil: this.formData.estado_civil,
+    tipo_documento: this.formData.tipo_documento,
+    documento_identidad : this.formData.documento_identidad,
+    lugar_nacimineto: this.formData.lugar_nacimineto,
+    fecha_nacimiento :this.formData.fecha_nacimiento,
+    calle: this.formData.calle,
+    edificio: this.formData.edificio,
+    sector: this.formData.sector,
+    ciudad: this.formData.ciudad,
+    telefono_residencia: this.formData.telefono_residencia,
+    telefono_trabajo: this.formData.telefono_trabajo,
+    celular:this.formData.celular,
+    correo: this.formData.correo
         };
         return personal;
     }
@@ -23,9 +36,7 @@ export class FormDataService {
     setPersonal(data: Personal) {
         // Update the Personal data only when the Personal Form had been validated successfully
         this.isPersonalFormValid = true;
-        this.formData.firstName = data.firstName;
-        this.formData.lastName = data.lastName;
-        this.formData.email = data.email;
+       
     }
 
     getWork() : string {
