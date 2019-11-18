@@ -33,7 +33,7 @@
                               </div>
                               <div class="form-group">
                                   <label class="control-label" for="email">Email</label>
-                                  <input class="form-control input-md" #email="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" id="correo" name="correo" type="text" placeholder="Email" [(ngModel)]="personal.correo">
+                                  <input class="form-control input-md" #correo="ngModel" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" id="correo" name="correo" type="text" placeholder="Email" [(ngModel)]="personal.correo">
                                   <div class="alert alert-danger" [hidden]="correo.valid">Email is required and must be valid</div>
                               </div>
                                   
